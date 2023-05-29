@@ -24,8 +24,9 @@ header{
     color: #fff;
 }
 
-
-
+.navbar-toggler-icon{
+    color:#25d366; 
+}
 
 .logo:hover{
     opacity: 0.5;
@@ -95,7 +96,8 @@ nav ul li a:hover{
 
 .imagen-animacion{
     margin-left: 30px;
-    width: 60%;
+    width: 100%;
+    max-width: 550px;
     animation: move_vector 6s ease-in-out infinite;         /* SE APLICA ANIMACIÓN PRINCIPAL*/
 }
 
@@ -114,11 +116,11 @@ nav ul li a:hover{
 /* Responsive inicio */
 @media screen and (max-width:800px){
     .contenedor-reforma{
-        margin-left: 30px;
         width: 85%;
         flex-wrap: wrap;
         flex-direction: column;
         padding: 35px 0px;
+        text-align: center;
     }
 }
 
