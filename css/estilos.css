@@ -36,15 +36,8 @@ nav ul li a:hover{
     opacity: 0.5;
 }
 
-/*#seleccionada{
-    color: white;
-    background: #067BC2;
-    padding: 10px 30px;
-    border-radius: 20px; 
-}
-*/
+/* ESTILOS PRINCIPAL INICIO */
 
-/*COVERTOR*/
 .carousel-inner{
     max-height: 42rem;
 }
@@ -101,7 +94,6 @@ nav ul li a:hover{
     box-shadow: 1px 1px 30px -5px #20202085;
 }
 
-
 .imagen-animacion{
     margin-left: 30px;
     width: 600px;
@@ -120,59 +112,6 @@ nav ul li a:hover{
     }
 }
 
-/* ESTILOS PRINCIPAL INICIO */
-
-.contenedor-principal{
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    height: auto;
-}
-
-.contenedor-principal h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    color: #373737;
-    margin-top:120px;
-    text-align: center;
-}
-
-.contenedor-principal span{
-    background-color: #266DD3;
-    height: 2px;
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 125px;
-
-}
-
-.principal-banner{
-    margin-bottom: -115px;
-    margin-top: 10px;
-    width: 100%;
-    height:250px;
-}
-
-.contenedor-principal__boton{
-    display:flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-.boton-estilo-1{
-    height: 40px;
-    width: 120px;
-    font-size: 20px;
-    background-color: #CDD3D5;
-    border-radius: 12px;
-    border-width: 2px;
-    border-style:solid;
-    border-color: black;
-}
-
-.boton-estilo-1 a {
-    color: black;
-} 
 
 /* ESTILOS PRINCIPAL CONTACTO */
 .contenedor-principal-contacto{  
@@ -214,6 +153,7 @@ nav ul li a:hover{
     padding-left: 10px;
     margin-bottom: 20px; 
     padding-top: 15px; 
+    text-align: center;
 }
 
 .contenedor-principal-contacto__formulario label{
@@ -223,10 +163,9 @@ nav ul li a:hover{
 
 .contenedor-principal-contacto__formulario button{
     height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600; 
     text-transform: uppercase;
     background-color: #266DD3;
     border-color: #266DD3;
@@ -511,6 +450,8 @@ color: lightgrey;
 
 
 .subtitulo1{
+    margin-top: 20px;
+    padding-top: 5px;
     font-size: 40px;
     color: #373737;
 }
@@ -518,6 +459,7 @@ color: lightgrey;
 .subtitulo2{
     font-size: 40px;
     color:#F58634;
+    padding-bottom: 20px;
 }
 
 .contenedor-principal-trabajos h3{
@@ -525,16 +467,6 @@ color: lightgrey;
     margin:30px 0px;
     font-size: 30px;
     color: #266DD3;
-}
-
-.linea-span{
-    display: block;
-    margin: auto;
-    width: 1400px;
-    background-color: #266DD3;
-    height: 2px;
-    margin-bottom: 30px;
-    margin-top: 15px;
 }
 
 .contenedor-galeria{
@@ -545,6 +477,8 @@ color: lightgrey;
     grid-gap: 10px;
     padding: 40px 0px;
     overflow: hidden;
+    border-top: solid 2px #266DD3;
+    border-bottom: solid 2px #266DD3;
 }
 
 .contenedor-galeria a{
@@ -617,7 +551,7 @@ color: lightgrey;
     line-height: 30px;
 }
 
-/* responsive?  VER MAS ADELANTE */
+
 
 @media(max-width:800px){
     .contenedor-principal-trabajos{

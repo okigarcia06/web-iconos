@@ -15,31 +15,64 @@
 </head>
 
 <body id="cuerpo">
-	<header class="container-fluid">
+	<header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu">
+            <div class="container-fluid">
+                <!--logo navbar-->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../imagenes/logo-iconos.png" alt="" height="70" width="150">
+                </a>
 
-        <nav class="navbar navbar-expand navbar-light bg-light" id="menu">
-            <a class="navbar-brand" href="../index.html">
-                <img class="logo" src="../imagenes/logo-iconos.png" alt="" height="70" width="150">
-            </a>
+                <!--Boton menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./trabajos.html">Trabajos Realizados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./servicios.html#diseño">Diseño Gráfico</a>
+                                <a class="dropdown-item" href="./servicios.html#toldos">Toldos y Cerramientos</a>
+                                <a class="dropdown-item" href="./servicios.html#ploteos">Ploteos</a>
+                                <a class="dropdown-item" href="./servicios.html#corporeas">Corporeas</a>
+                                <a class="dropdown-item" href="./servicios.html#grabado">Grabado Laser</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabajos.html">Trabajos Realizados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                    <hr class="text-white-50">
+                    <!--Enlaces redes sociales-->
+                    <ul class="navbar-nav flex-row flex-wrap text-dark">
+                        <li class="nav-item col-6 col-md-auto p-2">
+                            <a href="https://www.facebook.com/search/top?q=todogr%C3%A1fica_cba"><i class="bi bi-facebook"></i></a>
+                            <small class="d-md-none ms-2">Facebook</small>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto p-2">
+                            <a href="https://www.instagram.com/todografica_cba/"><i class="bi bi-instagram"></i></a>
+                            <small class="d-md-none ms-2">Instagram</small>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto p-2">
+                            <a href="https://wa.me/+5493516566477/?text=Me%20comunico%20desde%20la%20p%C3%A1gina%20web%20para%20realizar%20una%20consulta..."><i class="bi bi-whatsapp"></i></a>
+                            <small class="d-md-none ms-2">Whatsapp</small>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </nav>
     </header>
