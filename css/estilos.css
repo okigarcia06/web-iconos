@@ -114,123 +114,65 @@ nav ul li a:hover{
 }
 
 /* Responsive inicio */
-@media screen and (max-width:800px){
+@media screen and (max-width:860px){
     .contenedor-reforma{
-        width: 85%;
+        width: 90%;
         flex-wrap: wrap;
         flex-direction: column;
         padding: 35px 0px;
+        align-items: center;
         text-align: center;
     }
 }
 
 /* ESTILOS PRINCIPAL CONTACTO */
-.contenedor-principal-contacto{  
+
+.container{
     width: 100%;
-    max-width: 460px;
-    height: auto;
-    margin: 130px auto 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    border-radius: 10px;  
-    background-color: #fbfbfb; 
+    padding:45px;
+    border-radius: 0;
 }
 
-.contenedor-principal-contacto__formulario input{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #266DD3; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
+.row{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.contenedor-principal-contacto__formulario textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #266DD3;
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-    text-align: center;
+.col-md-7{
+    padding: 20px;
 }
 
-.contenedor-principal-contacto__formulario label{
-    display: block; 
-    float: center;  
+.col-md-5{
+    background-color: #1089ff;
+    padding: 10px;
+    color: #fff;
 }
 
-.contenedor-principal-contacto__formulario button{
-    height: 45px; 
-    padding: 10px 40px;
+.form-control{
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 8px;
+    box-sizing: none;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.bi{
     font-size: 20px;
-    font-weight: 600; 
-    text-transform: uppercase;
-    background-color: #266DD3;
-    border-color: #266DD3;
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
 }
 
-.contenedor-principal-contacto__formulario button:hover{
-    background-color: #3f7dd3;
+.d-flex p{
+    font-size: 18px;
+    padding-left: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.contenedor-principal-contacto__formulario button p{
-    color: white; 
+@media screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
 }
 
-.contenedor-principal-contacto__formulario span{
-    color: red; 
-}
-
-.contenedor-principal-contacto__formulario-aviso{
-    font-family:'Poppins', sans-serif;
-    font-size: 13px;  
-    color: black;  
-}
-
-.contenedor-principal-contacto__titulo{
-    font-family:'Poppins', sans-serif;
-    font-size: 39px;  
-    text-align: center; 
-    padding-bottom: 20px; 
-    color: #266DD3;
-}
-
-.contenedor-principal-contacto__subtitulo{
-    font-family:'Poppins', sans-serif;
-    font-size: 16px; 
-    padding-bottom: 30px;
-    color: black;   
-}
-
-.contenedor-principal-contacto__formulario p{
-    font-family:'Poppins', sans-serif;
-    font-size: 14px; 
-    color: black; 
-}
-
-::-webkit-input-placeholder {
-color: lightgrey;
-}
-::-webkit-textarea-placeholder {
-color: lightgrey;
-}
 
 /* ESTILOS LOGO WHATSAPP */
 
@@ -266,11 +208,11 @@ color: lightgrey;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding:15px 0px;
+    padding:15px;
 }
 
 .contenedor-principal-nosotros h2{
-    max-width: 1200px;
+    max-width: 1400px;
     border-top: solid 2px #266DD3;
     border-bottom: solid 2px #266DD3;
     padding: 10px;
@@ -279,7 +221,7 @@ color: lightgrey;
     width: 100%;
     text-align: center;
     font-size: 40px;
-    margin-top: 130px;
+    margin-top: 20px;
     margin-bottom: 30px;
     font-weight: 800;
 }
@@ -289,7 +231,7 @@ color: lightgrey;
     color: #7a7a7a;
     font-size: 18px;
     text-align: justify;
-    max-width: 1200px;
+    max-width: 1400px;
     line-height: 1.5;
     font-weight: 600;
 
@@ -298,8 +240,8 @@ color: lightgrey;
 /* Responsive nosotros */
 @media screen and (max-width:600px){
     .contenedor-principal-nosotros{
-        margin-left: 20px;
-        width: 85%;
+        margin-left: 30px;
+        width: 90%;
         padding: 35px 0px;
     }
 }

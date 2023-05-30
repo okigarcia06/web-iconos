@@ -19,7 +19,7 @@
 
 <body id="cuerpo">
 	<header">
-        <nav class="navbar navbar-expand-lg p-3" id="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark p-3" id="menu">
             <div class="container-fluid">
                 <!--logo navbar-->
                 <a class="navbar-brand" href="../index.html">
@@ -55,12 +55,12 @@
                             <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                            <a class="nav-link" href="./contactanos.html">Contáctanos</a>
                         </li>
                     </ul>
                     <hr class="text-white-50">
                     <!--Enlaces redes sociales-->
-                    <ul class="navbar-nav flex-row flex-wrap text-dark p-3">
+                    <ul class="navbar-nav flex-row flex-wrap text-light p-3">
                         <li class="nav-item col-6 col-md-auto p-2">
                             <a href="https://www.facebook.com/search/top?q=todogr%C3%A1fica_cba" class="bi bi-facebook" id="facebook"></a>
                             <small class="d-md-none ms-2">Facebook</small>
@@ -81,44 +81,49 @@
     </header>
 
 	<main>
-		<section class="contenedor-principal-contacto">
-			<div class="contenedor-principal-contacto__formulario-contenedor">      
-				<h1 class="contenedor-principal-contacto__titulo">Formulario de contacto</h1>
-				<h3 class="contenedor-principal-contacto__subtitulo">Escríbenos y en breve nos pondremos en contacto contigo.</h3>
-				<form class = "contenedor-principal-contacto__formulario" action="" method="post" enctype="multipart/form-data">       									
-					<p>
-						<label for="nombre" class="colocar_nombre">Nombre
-						<span class="obligatorio">*</span>
-						</label>
-						<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-					</p>
-					<p>
-						<label for="email" class="colocar_email">Email
-						<span class="obligatorio">*</span></label>
-						<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-					</p>	
-					<p>
-						<label for="telefono" class="colocar_telefono">Teléfono</label>
-						<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-					</p>    			
-					<p>
-						<label for="asunto" class="colocar_asunto">Asunto
-						<span class="obligatorio">*</span></label>
-						<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-					</p>    		
-					<p>
-						<label for="mensaje" class="colocar_mensaje">Mensaje
-						<span class="obligatorio">*</span></label>                     
-						<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-					</p>                    
-					<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-				
-					<p class="contenedor-principal-contacto__formulario-aviso">
-						<span class="obligatorio"> * </span>los campos son obligatorios.
-					</p>          
-				</form>
-			</div>  
-        </section>
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h4>Resolvemos tus consultas</h2>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Número de contacto</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su número de contacto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+
+                <div class="col-md-5">
+                    <h4>Contáctanos</h2> <hr>
+                    <div class="mt-5">
+                        <div class="d-flex">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Dirección: Paso de los andes 510 - Villa Allende - Córdoba</p>
+                        </div><hr>
+                        <div class="d-flex">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>Teléfono :- 351-6566477</p>
+                        </div><hr>
+                        <div class="d-flex">
+                            <i class="bi bi-envelope-fill"></i>
+                            <p>Email :- g_grafica@hotmail.com</p>
+                        </div><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 		<section class="boton-whatsapp">
 			<a href="https://api.whatsapp.com/send/?phone=5493516566477&text=Me%20comunico%20desde%20la%20p%C3%A1gina%20web%20para%20realizar%20una%20consulta..." target="_blank">
