@@ -75,6 +75,7 @@ nav ul li a:hover{
 .contenedor-reforma-texto p{
     margin-top: 10px;
     color: #7a7a7a;
+    text-align: justify;
 }
 
 .estilo-boton-1{
@@ -290,6 +291,7 @@ nav ul li a:hover{
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
     margin-bottom: 10px;
+    text-align: justify;
 }
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
