@@ -88,7 +88,6 @@ nav ul li a:hover{
     border: none;
     background-color: #F58634;
     border-radius: 20px;
-    *box-shadow: 1px 1px 30px -5px #20202049;
     cursor:pointer;
 }
 
@@ -97,9 +96,9 @@ nav ul li a:hover{
     color:white;
 }
 
-/* .estilo-boton-1:hover{
+.estilo-boton-1:hover{
     box-shadow: 1px 1px 30px -5px #20202085;
-} */
+}
 
 .imagen-animacion{
     margin-left: 30px;
@@ -140,9 +139,9 @@ nav ul li a:hover{
     border-radius: 0;
 }
 
-.row{
+#form-container{
     background-color: #F0F7F4;
-    *box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
 }
 
 .col-md-7{
