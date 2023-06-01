@@ -76,6 +76,8 @@ nav ul li a:hover{
     margin-top: 10px;
     color: #7a7a7a;
     text-align: justify;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .estilo-boton-1{
