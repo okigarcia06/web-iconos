@@ -146,9 +146,14 @@ nav ul li a:hover{
 }
 
 .col-md-5{
-    background-color: #1089ff;
+    background-color: #0d2033;
     padding: 10px;
     color: #fff;
+}
+
+#boton-enviar{
+    background-color: #0d2033;
+    color:#fff;
 }
 
 .form-control{
