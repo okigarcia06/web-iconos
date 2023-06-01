@@ -18,14 +18,18 @@ header{
     background-color: #0d2033;
 }
 
+.dropdown-menu{
+    background-color: #0d2033
+}
+
+.dropdown-menu a{
+    color: #fff;
+}
+
 #menu li > a{
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-}
-
-.navbar-toggler-icon{
-    color:#25d366; 
 }
 
 .logo:hover{
