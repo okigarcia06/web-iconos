@@ -1,0 +1,23 @@
+{
+  "name": "web-iconosgrafica-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okigarcia06/web-iconos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okigarcia06/web-iconos/issues"
+  },
+  "homepage": "https://github.com/okigarcia06/web-iconos#readme",
+  "devDependencies": {
+    "sass": "^1.63.3"
+  }
+}
