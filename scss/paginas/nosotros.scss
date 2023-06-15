@@ -1,0 +1,28 @@
+.contenedor-principal-nosotros {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	padding: 15px;
+	h2 {
+		max-width: 1400px;
+		border-top: solid 2px #266DD3;
+		border-bottom: solid 2px #266DD3;
+		padding: 10px;
+		color: $color_3;
+		width: 100%;
+		text-align: center;
+		font-size: 40px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-weight: 800;
+	}
+	p {
+		color: $color_4;
+		font-size: 18px;
+		text-align: justify;
+		max-width: 1400px;
+		line-height: 1.5;
+		font-weight: 600;
+	}
+}

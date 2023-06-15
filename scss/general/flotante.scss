@@ -1,0 +1,19 @@
+.boton-whatsapp {
+	position: fixed;
+	z-index: 1;
+	bottom: 20px;
+	right: 20px;
+	svg {
+		width: 80px;
+		filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.4));
+		&:hover {
+			opacity: 0.6;
+		}
+		circle {
+			fill: #25d366;
+		}
+		path {
+			fill: #fff;
+		}
+	}
+}
