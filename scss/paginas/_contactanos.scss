@@ -2,8 +2,24 @@
 	width: 100%;
 	padding: 45px;
 	border-radius: 0;
+	h1{
+		text-align: center;
+		color: $color_2;
+		font-size: 40px;
+	}
+	h2{
+		border-top: solid 2px #266DD3;
+		border-bottom: solid 2px #266DD3;
+		padding: 10px;
+		color: $color_3;
+		width: 100%;
+		text-align: center;
+		font-size: 40px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-weight: 600;
+	}
 	#form-container {
-		background-color: $background-color_3;
 		box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
 		.col-md-7 {
 			padding: 20px;

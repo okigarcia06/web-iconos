@@ -1,15 +1,19 @@
 .contenedor-principal-trabajos {
 	text-align: center;
+	padding: 45px;
 	.subtitulo1 {
-		margin-top: 20px;
-		padding-top: 5px;
 		font-size: 40px;
 		color: $color_2;
 	}
 	.subtitulo2 {
 		font-size: 40px;
 		color: $color_3;
-		padding-bottom: 20px;
+		border-top: solid 2px #266DD3;
+		border-bottom: solid 2px #266DD3;
+		padding: 10px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-weight: 600;
 	}
 	.contenedor-galeria {
 		display: grid;
@@ -19,7 +23,6 @@
 		grid-gap: 10px;
 		padding: 40px 0px;
 		overflow: hidden;
-		border-top: solid 2px #266DD3;
 		border-bottom: solid 2px #266DD3;
 		a {
 			display: block;

@@ -24,12 +24,12 @@
 		h1 {
 			max-width: 400px;
 			font-size: 60px;
-			font-weight: 900;
+			font-weight: 600;
 			color: $color_2;
 		}
 		h2 {
 			font-size: 60px;
-			font-weight: 900;
+			font-weight: 600;
 			color: $color_3;
 		}
 		p {
@@ -41,7 +41,7 @@
 		}
 	}
 	.imagen-animacion {
-		margin-left: 30px;
+		margin-left: 80px;
 		width: 100%;
 		max-width: 550px;
 		animation: move_vector 6s ease-in-out infinite;

@@ -6,6 +6,7 @@
 }
 
 #cuerpo {
+  background-color: #efefef;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -147,12 +148,12 @@ nav ul li a:hover {
 .contenedor-reforma .contenedor-reforma-texto h1 {
   max-width: 400px;
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 600;
   color: #373737;
 }
 .contenedor-reforma .contenedor-reforma-texto h2 {
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 600;
   color: #F58634;
 }
 .contenedor-reforma .contenedor-reforma-texto p {
@@ -163,7 +164,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 .contenedor-reforma .imagen-animacion {
-  margin-left: 30px;
+  margin-left: 80px;
   width: 100%;
   max-width: 550px;
   animation: move_vector 6s ease-in-out infinite;
@@ -190,22 +191,28 @@ nav ul li a:hover {
 .contenedor-principal-servicios {
   width: 100%;
   height: auto;
-  margin-top: 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 40px;
 }
 .contenedor-principal-servicios h1 {
   width: 100%;
   text-align: center;
-  color: #373737;
   font-size: 40px;
+  color: #373737;
 }
 .contenedor-principal-servicios h2 {
   width: 100%;
+  border-top: solid 2px #266DD3;
+  border-bottom: 2px solid #266DD3;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   color: #F58634;
   text-align: center;
   font-size: 40px;
+  font-weight: 600;
 }
 .contenedor-principal-servicios .cajas-servicios {
   width: 100%;
@@ -213,7 +220,7 @@ nav ul li a:hover {
   max-width: 1400px;
   padding: 20px;
   margin-top: 30px;
-  border-top: 2px solid #266DD3;
+  border-bottom: 2px solid #266DD3;
   margin-bottom: auto;
 }
 .contenedor-principal-servicios .cajas-servicios img {
@@ -236,17 +243,21 @@ nav ul li a:hover {
 
 .contenedor-principal-trabajos {
   text-align: center;
+  padding: 45px;
 }
 .contenedor-principal-trabajos .subtitulo1 {
-  margin-top: 20px;
-  padding-top: 5px;
   font-size: 40px;
   color: #373737;
 }
 .contenedor-principal-trabajos .subtitulo2 {
   font-size: 40px;
   color: #F58634;
-  padding-bottom: 20px;
+  border-top: solid 2px #266DD3;
+  border-bottom: solid 2px #266DD3;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 .contenedor-principal-trabajos .contenedor-galeria {
   display: grid;
@@ -256,7 +267,6 @@ nav ul li a:hover {
   grid-gap: 10px;
   padding: 40px 0px;
   overflow: hidden;
-  border-top: solid 2px #266DD3;
   border-bottom: solid 2px #266DD3;
 }
 .contenedor-principal-trabajos .contenedor-galeria a {
@@ -326,10 +336,15 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  padding: 15px;
+  padding: 45px;
+}
+.contenedor-principal-nosotros h1 {
+  text-align: center;
+  color: #373737;
+  font-size: 40px;
+  margin: 0px;
 }
 .contenedor-principal-nosotros h2 {
-  max-width: 1400px;
   border-top: solid 2px #266DD3;
   border-bottom: solid 2px #266DD3;
   padding: 10px;
@@ -339,7 +354,7 @@ nav ul li a:hover {
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 30px;
-  font-weight: 800;
+  font-weight: 600;
 }
 .contenedor-principal-nosotros p {
   color: #7a7a7a;
@@ -355,8 +370,24 @@ nav ul li a:hover {
   padding: 45px;
   border-radius: 0;
 }
+.container h1 {
+  text-align: center;
+  color: #373737;
+  font-size: 40px;
+}
+.container h2 {
+  border-top: solid 2px #266DD3;
+  border-bottom: solid 2px #266DD3;
+  padding: 10px;
+  color: #F58634;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
 .container #form-container {
-  background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
 }
 .container #form-container .col-md-7 {
@@ -405,9 +436,12 @@ nav ul li a:hover {
     width: 90%;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 35px 0px;
+    padding: 25px 0px;
     align-items: center;
     text-align: center;
+  }
+  .contenedor-reforma .imagen-animacion {
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -415,8 +449,7 @@ nav ul li a:hover {
     width: 100%;
   }
   .contenedor-principal-nosotros {
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -427,13 +460,21 @@ nav ul li a:hover {
     padding: 35px 0px;
   }
   .contenedor-principal-servicios {
-    width: 85%;
-    margin-left: 20px;
+    width: 90%;
     padding: 35px 0px;
+    margin-left: 20px;
+  }
+  .contenedor-principal-servicios img {
+    margin-left: -10px;
   }
 }
 @media (max-width: 800px) {
-  .contenedor-principal-trabajos {
+  .contenedor-principal-trabajos h1 {
+    width: 90%;
+    margin-left: 20px;
+    padding: 15px 0px;
+  }
+  .contenedor-principal-trabajos .contenedor-galeria {
     flex: 50%;
     padding: 5px;
   }
