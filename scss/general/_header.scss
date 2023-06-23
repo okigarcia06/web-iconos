@@ -4,12 +4,30 @@ header {
 #menu {
 	background-color: $background-color_1;
 	li {
-		>a {
+		a {
 			font-size: 18px;
 			font-weight: bold;
-			color: $color_1;
+			color: $color_11;
+			&:hover{
+				opacity: 0.5;
+			}
+			
 		}
-	}
+		#facebook{
+			opacity: 1;
+		}
+		#instagram{
+			opacity: 1;
+		}
+		#whatsapp{
+			opacity: 1;
+		}
+		
+		.active{
+			border-bottom: solid 3px $color_3;
+			color: $color_1;
+			}
+		}
 }
 .dropdown-menu {
 	background-color: $background-color_1;
@@ -20,16 +38,5 @@ header {
 .logo {
 	&:hover {
 		opacity: 0.5;
-	}
-}
-nav {
-	ul {
-		li {
-			a {
-				&:hover {
-					opacity: 0.5;
-				}
-			}
-		}
 	}
 }

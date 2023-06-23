@@ -9,10 +9,12 @@
 		color: $color_2;
 		font-size: 40px;
 		margin: 0px;
+		width: 100%;
 	}
 	h2 {
 		border-top: solid 2px #266DD3;
 		border-bottom: solid 2px #266DD3;
+		max-width: 1400px;
 		padding: 10px;
 		color: $color_3;
 		width: 100%;

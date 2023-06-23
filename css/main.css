@@ -18,9 +18,25 @@ header {
 #menu {
   background-color: #0d2033;
 }
-#menu li > a {
+#menu li a {
   font-size: 18px;
   font-weight: bold;
+  color: #bfbfbf;
+}
+#menu li a:hover {
+  opacity: 0.5;
+}
+#menu li #facebook {
+  opacity: 1;
+}
+#menu li #instagram {
+  opacity: 1;
+}
+#menu li #whatsapp {
+  opacity: 1;
+}
+#menu li .active {
+  border-bottom: solid 3px #F58634;
   color: #fff;
 }
 
@@ -32,10 +48,6 @@ header {
 }
 
 .logo:hover {
-  opacity: 0.5;
-}
-
-nav ul li a:hover {
   opacity: 0.5;
 }
 
@@ -201,9 +213,11 @@ nav ul li a:hover {
   text-align: center;
   font-size: 40px;
   color: #373737;
+  width: 100%;
 }
 .contenedor-principal-servicios h2 {
   width: 100%;
+  max-width: 1400px;
   border-top: solid 2px #266DD3;
   border-bottom: 2px solid #266DD3;
   padding: 10px;
@@ -246,17 +260,21 @@ nav ul li a:hover {
   padding: 25px;
 }
 .contenedor-principal-trabajos .subtitulo1 {
+  width: 100%;
   font-size: 40px;
   color: #373737;
 }
 .contenedor-principal-trabajos .subtitulo2 {
-  font-size: 40px;
-  color: #F58634;
+  display: inline-block;
+  width: 100%;
   border-top: solid 2px #266DD3;
-  border-bottom: solid 2px #266DD3;
+  border-bottom: 2px solid #266DD3;
+  max-width: 1400px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 30px;
+  color: #F58634;
+  font-size: 40px;
   font-weight: 600;
 }
 .contenedor-principal-trabajos .contenedor-galeria {
@@ -343,10 +361,12 @@ nav ul li a:hover {
   color: #373737;
   font-size: 40px;
   margin: 0px;
+  width: 100%;
 }
 .contenedor-principal-nosotros h2 {
   border-top: solid 2px #266DD3;
   border-bottom: solid 2px #266DD3;
+  max-width: 1400px;
   padding: 10px;
   color: #F58634;
   width: 100%;
@@ -428,6 +448,7 @@ nav ul li a:hover {
 }
 .container #form-container {
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  margin-left: 12px;
 }
 .container #form-container .col-md-7 {
   padding: 20px;
