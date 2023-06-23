@@ -505,7 +505,7 @@ nav ul li a:hover {
     height: 280px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 {
     border-right: solid 2px #266DD3;
   }
