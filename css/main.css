@@ -379,7 +379,8 @@ nav ul li a:hover {
 .contenedor-principal-nosotros .nuestro-equipo .container--flex {
   display: flex;
   flex-wrap: wrap;
-  *align-items: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 {
   width: 32%;
@@ -399,7 +400,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__txt {
-  padding: 10px;
+  padding: 20px;
   text-align: justify;
 }
 
@@ -493,6 +494,8 @@ nav ul li a:hover {
   }
   .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 {
     width: 100%;
+    border-bottom: solid 2px #266DD3;
+    margin-bottom: 20px;
   }
   .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__titulo {
     font-size: 2em;
@@ -500,6 +503,14 @@ nav ul li a:hover {
   .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__img {
     width: 280px;
     height: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 {
+    border-right: solid 2px #266DD3;
+  }
+  .contenedor-principal-nosotros .nuestro-equipo .container--flex #border {
+    border-left: solid 2px #266DD3;
   }
 }
 @media screen and (max-width: 800px) {

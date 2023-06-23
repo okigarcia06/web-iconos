@@ -44,7 +44,8 @@
 		.container--flex{
 			display: flex;
 			flex-wrap: wrap;
-			*align-items: flex-start;
+			align-items: flex-start;
+			justify-content: space-between;
 			.column--33{
 				width: 32%;
 				.nuestro-equipo__titulo{
@@ -62,7 +63,7 @@
 					margin-bottom: 20px;
 				}
 				.nuestro-equipo__txt{
-					padding:10px;
+					padding:20px;
 					text-align: justify;
 				}
 			}
