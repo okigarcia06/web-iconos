@@ -194,7 +194,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px;
+  padding: 25px;
 }
 .contenedor-principal-servicios h1 {
   width: 100%;
@@ -243,7 +243,7 @@ nav ul li a:hover {
 
 .contenedor-principal-trabajos {
   text-align: center;
-  padding: 45px;
+  padding: 25px;
 }
 .contenedor-principal-trabajos .subtitulo1 {
   font-size: 40px;
@@ -336,7 +336,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  padding: 45px;
+  padding: 25px;
 }
 .contenedor-principal-nosotros h1 {
   text-align: center;
@@ -364,10 +364,48 @@ nav ul li a:hover {
   line-height: 1.5;
   font-weight: 600;
 }
+.contenedor-principal-nosotros .nuestro-equipo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contenedor-principal-nosotros .nuestro-equipo h2 {
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+  color: #373737;
+  font-size: 40px;
+  font-weight: bold;
+}
+.contenedor-principal-nosotros .nuestro-equipo .container--flex {
+  display: flex;
+  flex-wrap: wrap;
+  *align-items: flex-start;
+}
+.contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 {
+  width: 32%;
+}
+.contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__titulo {
+  color: #7a7a7a;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__txt {
+  padding: 10px;
+  text-align: justify;
+}
 
 .container {
   width: 100%;
-  padding: 45px;
+  padding: 25px;
   border-radius: 0;
 }
 .container h1 {
@@ -448,8 +486,20 @@ nav ul li a:hover {
   .container {
     width: 100%;
   }
+}
+@media screen and (max-width: 768px) {
   .contenedor-principal-nosotros {
     width: 100%;
+  }
+  .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 {
+    width: 100%;
+  }
+  .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__titulo {
+    font-size: 2em;
+  }
+  .contenedor-principal-nosotros .nuestro-equipo .container--flex .column--33 .nuestro-equipo__img {
+    width: 280px;
+    height: 280px;
   }
 }
 @media screen and (max-width: 800px) {

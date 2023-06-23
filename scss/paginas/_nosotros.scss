@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	padding: 45px;
+	padding: 25px;
 	h1{
 		text-align: center;
 		color: $color_2;
@@ -29,5 +29,44 @@
 		max-width: 1400px;
 		line-height: 1.5;
 		font-weight: 600;
+	}
+	.nuestro-equipo{
+		text-align: center;
+		margin-bottom: 20px;
+		h2{
+			border-top: none;
+			border-bottom: none;
+			text-align: center;
+			color: $color_2;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.container--flex{
+			display: flex;
+			flex-wrap: wrap;
+			*align-items: flex-start;
+			.column--33{
+				width: 32%;
+				.nuestro-equipo__titulo{
+					color: $color_4;
+					font-weight: bold;
+					font-size: 1.8em;
+					margin-bottom: 10px;
+				}
+				.nuestro-equipo__img{
+					width: 200px;
+					height: 200px;
+					object-fit: cover;
+					border-radius: 50%;
+					margin: auto;
+					margin-bottom: 20px;
+				}
+				.nuestro-equipo__txt{
+					padding:10px;
+					text-align: justify;
+				}
+			}
+			
+		}
 	}
 }

@@ -16,10 +16,29 @@
 	.container {
 		width: 100%;
 	}
-	.contenedor-principal-nosotros {
+}
+
+@media screen and (max-width:768px){
+	.contenedor-principal-nosotros{
 		width: 100%;
+		.nuestro-equipo{
+			.container--flex{
+				.column--33{
+					width: 100%;
+					.nuestro-equipo__titulo{
+						font-size: 2em;
+					}
+					.nuestro-equipo__img{
+						width: 280px;
+						height: 280px;
+					}
+				}
+			}
+		}
 	}
 }
+
+
 @media screen and (max-width: 800px) {
 	.pie-pagina {
 		.grupo-1 {
