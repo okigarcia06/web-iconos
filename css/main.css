@@ -260,7 +260,6 @@ header {
   padding: 25px;
 }
 .contenedor-principal-trabajos .subtitulo1 {
-  width: 100%;
   font-size: 40px;
   color: #373737;
 }
@@ -448,7 +447,6 @@ header {
 }
 .container #form-container {
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
-  margin-left: 12px;
 }
 .container #form-container .col-md-7 {
   padding: 20px;
