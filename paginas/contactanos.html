@@ -9,14 +9,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Nunito:ital,wght@1,300&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 	<title>Iconos Gráfica Digital | Contactános</title>
+
     <!-- Meta descripción y palabrás clave SEO -->
     <meta name="descripcion" content="Contactános y reforma tu negocio o tu hogar.">
     <meta name="keywords" content="diseño,contacto,whatsapp,mail,instagram">
+
 	<!-- Iconos FontAwesome -->
 	<script src="https://kit.fontawesome.com/9525ca78b5.js" crossorigin="anonymous"></script>
+
 	<!-- Bootsrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 	<!-- Estilos css -->
 	<link rel="stylesheet" href="../css/main.css">
     <script defer src="../script.js"></script>
@@ -24,6 +28,7 @@
 
 <body id="cuerpo">
 	<header">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark p-3" id="menu">
             <div class="container-fluid">
                 <!--logo navbar-->
@@ -31,20 +36,26 @@
                     <img class="logo" src="../imagenes/logo-iconos.png" alt="Logo Iconos Gráfica Córdoba" height="70" width="150">
                 </a>
 
-                <!--Boton menu-->
+                <!--botón navegación-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
+
+                        <!-- Secciones - Items -->
                         <li class="nav-item">
                             <a class="nav-link" href="/">Inicio</a>
                         </li>
+
+                        <!--Menu desplegable servicios-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="./servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Servicios
                             </a>
+
+                            <!-- Servicios -->
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="./servicios.html#diseño">Diseño Gráfico</a>
                                 <a class="dropdown-item" href="./servicios.html#toldos">Toldos y Cerramientos</a>
@@ -52,28 +63,36 @@
                                 <a class="dropdown-item" href="./servicios.html#corporeas">Corporeas</a>
                                 <a class="dropdown-item" href="./servicios.html#grabado">Grabado Laser</a>
                             </div>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./trabajos.html">Trabajos Realizados</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="./contactanos.html">Contáctanos</a>
                         </li>
+
                     </ul>
                     <hr class="text-white-50">
+
                     <!--Enlaces redes sociales-->
                     <ul class="navbar-nav flex-row flex-wrap text-light p-3">
+                        <!-- Facebook -->
                         <li class="nav-item col-6 col-md-auto p-2">
                             <a href="https://www.facebook.com/search/top?q=todogr%C3%A1fica_cba" class="bi bi-facebook" rel="nofollow" id="facebook"></a>
                             <small class="d-md-none ms-2">Facebook</small>
                         </li>
+                        <!-- Instagram -->
                         <li class="nav-item col-6 col-md-auto p-2">
                             <a href="https://instagram.com/todografica_cba?igshid=MmJiY2I4NDBkZg==" class="bi bi-instagram" rel="nofollow" id="instagram"></a>
                             <small class="d-md-none ms-2">Instagram</small>
                         </li>
+                        <!-- Whatsapp -->
                         <li class="nav-item col-6 col-md-auto p-2">
                             <a href="https://wa.me/+5493516566477/?text=Me%20comunico%20desde%20la%20p%C3%A1gina%20web%20para%20realizar%20una%20consulta..." class="bi bi-whatsapp" rel="nofollow" id="whatsapp"></a>
                             <small class="d-md-none ms-2">Whatsapp</small>
@@ -86,14 +105,16 @@
     </header>
 
 	<main>
+
         <!-- FORMULARIO DE CONTACTO -->
-        
         <div class="container">
             <h1>ICONOS GRÁFICA</h1>
             <h2>FORMULARIO DE CONTACTO</h2>
             <div class="row" id="form-container" >
                 <div class="col-md-7">
                     <h4>Resolvemos tus consultas</h2>
+                    
+                    <!-- Inputs de form -->
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
@@ -112,7 +133,8 @@
                     </div>
                     <button class="btn" id="boton-enviar">Enviar</button>
                 </div>
-
+                
+                <!-- Info de contacto form -->
                 <div class="col-md-5">
                     <h4>Contáctanos</h2> <hr>
                     <div class="mt-5">
@@ -133,6 +155,7 @@
             </div>
         </div>
 
+        <!-- Boton de whatsapp fijo -->
 		<section class="boton-whatsapp">
 			<a href="https://api.whatsapp.com/send/?phone=5493516566477&text=Me%20comunico%20desde%20la%20p%C3%A1gina%20web%20para%20realizar%20una%20consulta..." rel="nofollow" target="_blank">
 				<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -146,8 +169,11 @@
 		</section>
 	</main>
 
+    <!-- Pie de página -->
 	<footer class="pie-pagina">
         <div class="grupo-1">
+
+            <!-- Sección logo pie -->
             <div class="box">
                 <figure>
                     <a href="/">
@@ -155,6 +181,8 @@
                     </a>
                 </figure>
             </div>
+
+            <!-- Sección intro pie -->
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
                 <p>Somos una empresa con más de 30 años en el rubro conformada por expertos en gráfica digital. </p>
@@ -163,6 +191,8 @@
                 
                 <p>¡No esperes más y contáctanos!</p>
             </div>
+
+            <!-- Sección redes sociales pie -->
             <div class="box">
                 <h2>CONTÁCTANOS</h2>
                 <div class="red-social">
@@ -173,12 +203,15 @@
             </div>
         </div>
 
+        <!-- Sección copyright -->
         <div class="caja-copyright">
             <hr>
             <p>Todos los derechos reservados © 2023 - <b>Iconos Gráfica Digital</b></p>
         </div>
 
     </footer>
+
+    <!-- Scripts js -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
