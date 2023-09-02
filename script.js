@@ -1,3 +1,19 @@
+// validar form de contacto
+(() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+    }, false)
+    })
+})()
+
+
 // Función para marcar sección Activa en Menú
 
 const navLinksElem = document.querySelectorAll('.nav-link');
@@ -12,3 +28,5 @@ navLinksElem.forEach(navLinkEl => {
         navLinkEl.classList.add('active');
     }
 })
+
+
