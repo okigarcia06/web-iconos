@@ -52,14 +52,14 @@ header {
 }
 
 .pie-pagina {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   width: 100%;
   background-color: #0a141d;
 }
 .pie-pagina .grupo-1 {
-  width: 100%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 80px;
@@ -118,18 +118,12 @@ header {
   bottom: 20px;
   right: 20px;
 }
-.boton-whatsapp svg {
-  width: 80px;
+.boton-whatsapp img {
+  width: 50px;
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.4));
 }
-.boton-whatsapp svg:hover {
+.boton-whatsapp img:hover {
   opacity: 0.6;
-}
-.boton-whatsapp svg circle {
-  fill: #25d366;
-}
-.boton-whatsapp svg path {
-  fill: #fff;
 }
 
 @keyframes move_vector {

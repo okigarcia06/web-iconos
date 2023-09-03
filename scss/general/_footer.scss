@@ -1,11 +1,11 @@
 .pie-pagina {
-	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 10px;
 	width: 100%;
 	background-color: $background-color_4;
 	.grupo-1 {
-		width: 100%;
 		max-width: 1200px;
-		margin: auto;
+		margin: 0 auto;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 80px;
