@@ -111,11 +111,11 @@
             <h1>ICONOS GRÁFICA</h1>
             <h2>FORMULARIO DE CONTACTO</h2>
             <div class="row" id="form-container">
-                <form class="col-md-7 g-3 needs-validation" novalidate>
+                <form id="form" class="col-md-7 g-3 needs-validation" novalidate>
                     <h4>Resolvemos tus consultas</h4>
                     <div class="mb-3">
-                        <label for="validationCustom01" class="form-label">Nombre</label>
-                        <input name="nombre" type="text" class="form-control" id="validationCustom01" value="" required>
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input name="nombre" type="text" class="form-control" id="nombre" value="" placeholder="Ingrese su nombre" required>
                         <div class="valid-feedback">
                             Correcto!
                         </div>
@@ -124,18 +124,18 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="validationCustom02" class="form-label">Apellido</label>
-                        <input name="apellido" type="text" class="form-control" id="validationCustom02" value="" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input name="email" type="text" class="form-control" id="email" value="" placeholder="Ingrese su email" required>
                         <div class="valid-feedback">
                             Correcto!
                         </div>
                         <div class="invalid-feedback">
-                            Porfavor ingrese un apellido.
+                            Porfavor ingrese un Email.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="validationCustom03" class="form-label">Número de contacto</label>
-                        <input name="nroContacto" type="text" class="form-control" id="validationCustom03" required>
+                        <label for="nroContacto" class="form-label">Número de contacto</label>
+                        <input name="nroContacto" type="text" class="form-control" id="nroContacto" placeholder="Ingrese su número de contacto" required>
                         <div class="valid-feedback">
                             Correcto!
                         </div>
@@ -144,8 +144,8 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="msjId" class="form-label">Mensaje</label>
-                        <textarea name="mensaje" class="form-control" id="msjId" rows="3" required></textarea>
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea name="mensaje" class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje..." required></textarea>
                         <div class="valid-feedback">
                             Correcto.
                         </div>
@@ -177,6 +177,7 @@
                     </div>
                 </div>
             </div>
+            <a href="mailto:g_grafica@hotmail.com" id="enviarMail">mail</a>
         </div>
 
         <!-- Boton de whatsapp fijo -->

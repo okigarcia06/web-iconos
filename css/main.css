@@ -445,6 +445,9 @@ header {
   margin-bottom: 30px;
   font-weight: 600;
 }
+.container #enviarMail {
+  opacity: 0;
+}
 .container #form-container {
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
 }
