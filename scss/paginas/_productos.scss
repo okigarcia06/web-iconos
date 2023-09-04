@@ -1,7 +1,29 @@
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.header-section div{
+    position: relative;
+}
+.header-section p{
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: red;
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
 .cart {
     width: 28px;
     height: 27px;
-    margin-left: 15px;
     transition: margin-bottom 0.5s ease;
 }
 
@@ -14,6 +36,7 @@
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
     min-width: 290px;
+    z-index: 100;
 }
 
 .cart:hover {
