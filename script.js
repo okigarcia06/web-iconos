@@ -149,7 +149,7 @@ function loadHtml(){
             <div class="item-content">
                 <h5>${title}</h5>
                 <h5 class="cart-price">${price}$</h5>
-                <h6>Amount: ${amount}</h6>
+                <h6>Cantidad: ${amount}</h6>
             </div>
             <span class="delete-product" data-id="${id}">X</span>
         `;
@@ -160,8 +160,41 @@ function loadHtml(){
 
         amountProduct.innerHTML = countProduct;
     });
+    // Reinicia el contador de productos y el precio total
+    priceTotal.innerHTML = totalCard;
+    amountProduct.innerHTML = countProduct;
 }
 
 function clearHtml(){
     containerBuyCart.innerHTML = '';
 }
+
+//SE AGREGA LIBRERÍA SWEET ALERT.
+
+//Función para que al clickear el botón comprar muestre el mensaje de sweet alert.
+comprarBtn.addEventListener('click', () => {
+    if (buyThings.length === 0) {
+        // Si el carrito está vacío, muestra un mensaje de error con SweetAlert.
+        Swal.fire({
+            icon: 'error',
+            title: '¡Carrito vacío!',
+            text: 'No puede realizar una compra sin productos en el carrito.',
+        });
+    } else {
+        // Si el carrito no está vacío, muestra un mensaje de éxito con SweetAlert.
+        Swal.fire({
+            icon: 'success',
+            title: '¡Compra exitosa!',
+            text: 'Su compra ha sido realizada con éxito.',
+        
+        //Si la compra fue éxitosa, se limpia el carrito.
+        }).then((result) => {
+            if (result.isConfirmed) {
+                buyThings = [];
+                totalCard = 0;
+                countProduct = 0;
+                loadHtml();
+            }
+        });
+    }
+});
