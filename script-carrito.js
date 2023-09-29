@@ -11,16 +11,39 @@ document.addEventListener('DOMContentLoaded', () => {
     let countProduct = 0;
 
     // Funciones
+    initializeCartFromLocalStorage();
     loadEventListeners();
+
     function loadEventListeners() {
         allContainerCart.addEventListener('click', addProduct);
         containerBuyCart.addEventListener('click', deleteProduct);
     }
 
-    function addProduct(e){
+    //SE INICIALIZA EL CARRITO EN EL LOCAL STORE.
+    function initializeCartFromLocalStorage() {
+        const cartData = JSON.parse(localStorage.getItem('cartData'));
+        if (cartData) {
+            buyThings = cartData.items || [];
+            totalCard = cartData.total || 0;
+            countProduct = cartData.count || 0;
+            loadHtml();
+        }
+    }
+
+    //FUNCION QUE GUARDA EL CARRITO EN EL LOCAL STORE.
+    function saveCartToLocalStorage() {
+        const cartData = {
+            items: buyThings,
+            total: totalCard,
+            count: countProduct,
+        };
+        localStorage.setItem('cartData', JSON.stringify(cartData));
+    }
+
+    function addProduct(e) {
         e.preventDefault();
         if (e.target.classList.contains('btn-add-cart')) {
-            const selectProduct = e.target.parentElement; 
+            const selectProduct = e.target.parentElement;
             readTheContent(selectProduct);
         }
     }
@@ -28,8 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function deleteProduct(e) {
         if (e.target.classList.contains('delete-product')) {
             const deleteId = e.target.getAttribute('data-id');
-            
-            // Mostrar un mensaje de confirmación con SweetAlert
+
             Swal.fire({
                 title: '¿Está seguro que desea eliminar este producto?',
                 text: 'Esta acción no se puede deshacer.',
@@ -47,17 +69,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     });
                     buyThings = buyThings.filter(product => product.id !== deleteId);
-                    
+
                     countProduct--;
 
-                    // Actualizar la interfaz después de eliminar el producto
                     loadHtml();
                 }
             });
+
+            // Guarda el carrito en localStorage después de eliminar un producto
+            saveCartToLocalStorage();
         }
     }
 
-    function readTheContent(product){
+    function readTheContent(product) {
         const infoProduct = {
             image: product.querySelector('div img').src,
             title: product.querySelector('.title').textContent,
@@ -85,13 +109,15 @@ document.addEventListener('DOMContentLoaded', () => {
             countProduct++;
         }
         loadHtml();
-        //console.log(infoProduct);
+
+        // Guarda el carrito en localStorage después de agregar un producto
+        saveCartToLocalStorage();
     }
 
-    function loadHtml(){
+    function loadHtml() {
         clearHtml();
         buyThings.forEach(product => {
-            const {image, title, price, amount, id} = product;
+            const { image, title, price, amount, id } = product;
             const row = document.createElement('div');
             row.classList.add('item');
             row.innerHTML = `
@@ -111,27 +137,22 @@ document.addEventListener('DOMContentLoaded', () => {
             amountProduct.innerHTML = countProduct;
         });
 
-        // Reinicia el contador de productos y el precio total
         priceTotal.innerHTML = totalCard;
         amountProduct.innerHTML = countProduct;
     }
 
-    function clearHtml(){
+    function clearHtml() {
         containerBuyCart.innerHTML = '';
     }
 
-    //SE AGREGA LIBRERÍA SWEET ALERT.
-    // Función para que al clickear el botón comprar muestre el mensaje de SweetAlert.
     document.getElementById('comprarBtn').addEventListener('click', () => {
         if (buyThings.length === 0) {
-            // Si el carrito está vacío, muestra un mensaje de error con SweetAlert.
             Swal.fire({
                 icon: 'error',
                 title: '¡Carrito vacío!',
                 text: 'No puede realizar una compra sin productos en el carrito.',
             });
         } else {
-            // Si el carrito no está vacío, muestra un mensaje de éxito con SweetAlert.
             Swal.fire({
                 icon: 'success',
                 title: '¡Compra exitosa!',
@@ -142,6 +163,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     totalCard = 0;
                     countProduct = 0;
                     loadHtml();
+
+                    // Elimina el carrito de localStorage después de la compra
+                    localStorage.removeItem('cartData');
                 }
             });
         }
