@@ -29,7 +29,7 @@
 </head>
 
 <body id="cuerpo">
-	<header">
+	<header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark p-3" id="menu">
             <div class="container-fluid">
@@ -125,97 +125,10 @@
 
         <section class="container">
             <div class="products">
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/vinilo-esmerilado.jpg" alt="">
-                        <p><span>4000</span>$</p>
-                    </div>
-                    <p class="title">Vinilo Esmerilado autoadhesivo MCAL 0,61 x 1 mts</p>
-                    <a href="#" data-id="1" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/vinilos-color.jpg" alt="">
-                        <p><span>1600</span>$</p>
-                    </div>
-                    <p class="title">Vinilo color autoadhesivo económico 0,61 x 1 mts</p>
-                    <a href="#" class="btn-add-cart" data-id="2">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/banner-portabanner.png" alt="">
-                        <p><span>25000</span>$</p>
-                    </div>
-                    <p class="title">Banner con portabanner 0.90 x 1.90mts Lona</p>
-                    <a href="#" data-id="3" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/Lona-front-13oz.jpg" alt="">
-                        <p><span>7000</span>$</p>
-                    </div>
-                    <p class="title">Lona front 13oz impresa x mt</p>
-                    <a href="#" data-id="4" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/folletos.jpg" alt="">
-                        <p><span>17000</span>$</p>
-                    </div>
-                    <p class="title">1000 Volantes / Folletos 10x15cm Full Color Doble Faz 150gr.</p>
-                    <a href="#" data-id="5" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/vinilos-termotransferibles.jpg" alt="">
-                        <p><span>8000</span>$</p>
-                    </div>
-                    <p class="title"> Vinilos termotransferibles. Vinilo para el estampado Textil.
-                        20 vibrantes colores.</p>
-                    <a href="#" data-id="6" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/impresion-a3.jpg" alt="">
-                        <p><span>2800</span>$</p>
-                    </div>
-                    <p class="title"> 10 Impresiones A3 Full Color, Ilustracion 300grs.</p>
-                    <a href="#" data-id="7" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/flybanners.jpg" alt="">
-                        <p><span>23000</span>$</p>
-                    </div>
-                    <p class="title"> Fly Banners - Bandera - Gota Publicidad 240x70cm + Estaca</p>
-                    <a href="#" data-id="8" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/tintas-y-telas-01.jpg" alt="">
-                        <p><span>8000</span>$</p>
-                    </div>
-                    <p class="title"> Impresión tela x mt</p>
-                    <a href="#" data-id="9" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/stickers.jpg" alt="">
-                        <p><span>15000</span>$</p>
-                    </div>
-                    <p class="title"> 1000 Stickers 3.5 Cm Etiquetas Autoadhesivas Troqueladas</p>
-                    <a href="#" data-id="10" class="btn-add-cart">Sumar al carrito</a>
-                </div>
-                <div class="carts">
-                    <div>
-                        <img src="../imagenes/led.jpg" alt="">
-                        <p><span>7000</span>$</p>
-                    </div>
-                    <p class="title"> Tira Led 5050 Blanco Frio - Fuente - Rollo 5 Metros</p>
-                    <a href="#" data-id="11" class="btn-add-cart">Sumar al carrito</a>
-                </div>
+                <!-- Los productos se cargarán dinámicamente aquí desde JavaScript -->
             </div>
         </section>
+        
         <section class="boton-whatsapp">
 			<a href="https://api.whatsapp.com/send/?phone=5493516566477&text=Me%20comunico%20desde%20la%20p%C3%A1gina%20web%20para%20realizar%20una%20consulta..." rel="nofollow" target="_blank">
 				<img src="../imagenes/whatsapp2.png" alt="">
@@ -265,20 +178,19 @@
 
     </footer>
 
-    <!-- Scripts js -->
-    <script>
-        function showCart(x){
-            document.getElementById("products-id").style.display = "block";
-        }
-        function closeBtn(){
-            document.getElementById("products-id").style.display = "none";
-        }
-
-    </script>
-    <script src="../script.js"></script>
-    <script src="../script-carrito.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Scripts js -->
+<script>
+    function showCart(x){
+        document.getElementById("products-id").style.display = "block";
+    }
+    function closeBtn(){
+        document.getElementById("products-id").style.display = "none";
+    }
+</script>
+<script src="../script.js"></script>
+<script src="../script-carrito.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

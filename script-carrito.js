@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // CARRITO DE COMPRAS DE PRODUCTOS
     // Variables
     let allContainerCart = document.querySelector('.products');
     let containerBuyCart = document.querySelector('.card-items');
@@ -28,6 +27,45 @@ document.addEventListener('DOMContentLoaded', () => {
             countProduct = cartData.count || 0;
             loadHtml();
         }
+    }
+
+    // Realizar una solicitud fetch para cargar datos desde el archivo JSON local
+    fetch('../productos.json')
+        .then(response => response.json())
+        .then(data => {
+            // Procesa los datos del archivo JSON y crea las tarjetas de productos
+            data.forEach(productData => {
+                const infoProduct = {
+                    image: productData.imagen,
+                    title: productData.nombre,
+                    price: productData.precio,
+                    id: productData.id,
+                    amount: 0
+                };
+                createProductCard(infoProduct);
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar datos de productos:', error);
+        });
+
+    // Función para crear una tarjeta de producto y agregarla al contenedor
+    function createProductCard(product) {
+        const card = document.createElement('div');
+        card.classList.add('carts');
+
+        // Crea la estructura de la tarjeta de producto aquí utilizando los datos de "product"
+        card.innerHTML = `
+            <div>
+                <img src="${product.image}" alt="">
+                <p><span>${product.price}</span>$</p>
+            </div>
+            <p class="title">${product.title}</p>
+            <a href="#" class="btn-add-cart" data-id="${product.id}">Sumar al carrito</a>
+        `;
+
+        // Agrega la tarjeta al contenedor
+        allContainerCart.appendChild(card);
     }
 
     //FUNCION QUE GUARDA EL CARRITO EN EL LOCAL STORE.

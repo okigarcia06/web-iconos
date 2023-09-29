@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "nombre": "Vinilo Esmerilado autoadhesivo MCAL 0,61 x 1 mts",
+        "imagen": "../imagenes/vinilo-esmerilado.jpg",
+        "precio": 4000
+    },
+    {
+        "id": 2,
+        "nombre": "Vinilo color autoadhesivo económico 0,61 x 1 mts",
+        "imagen": "../imagenes/vinilos-color.jpg",
+        "precio": 1600
+    },
+    {
+        "id": 3,
+        "nombre": "Banner con portabanner 0.90 x 1.90mts Lona",
+        "imagen": "../imagenes/banner-portabanner.png",
+        "precio": 25000
+    },
+    {
+        "id": 4,
+        "nombre": "Lona front 13oz impresa x mt",
+        "imagen": "../imagenes/Lona-front-13oz.jpg",
+        "precio": 7000
+    },
+    {
+        "id": 5,
+        "nombre": "1000 Volantes / Folletos 10x15cm Full Color Doble Faz 150gr.",
+        "imagen": "../imagenes/folletos.jpg",
+        "precio": 17000
+    },
+    {
+        "id": 6,
+        "nombre": "Vinilos termotransferibles. Vinilo para el estampado Textil. 20 vibrantes colores.",
+        "imagen": "../imagenes/vinilos-termotransferibles.jpg",
+        "precio": 8000
+    },
+    {
+        "id": 7,
+        "nombre": "10 Impresiones A3 Full Color, Ilustracion 300grs.",
+        "imagen": "../imagenes/impresion-a3.jpg",
+        "precio": 2800
+    },
+    {
+        "id": 8,
+        "nombre": "Fly Banners - Bandera - Gota Publicidad 240x70cm + Estaca",
+        "imagen": "../imagenes/flybanners.jpg",
+        "precio": 23000
+    },
+    {
+        "id": 9,
+        "nombre": "Impresión tela x mt",
+        "imagen": "../imagenes/tintas-y-telas-01.jpg",
+        "precio": 8000
+    },
+    {
+        "id": 10,
+        "nombre": "1000 Stickers 3.5 Cm Etiquetas Autoadhesivas Troqueladas",
+        "imagen": "../imagenes/stickers.jpg",
+        "precio": 15000
+    },
+    {
+        "id": 11,
+        "nombre": "Tira Led 5050 Blanco Frio - Fuente - Rollo 5 Metros",
+        "imagen": "../imagenes/led.jpg",
+        "precio": 7000
+    }
+]
